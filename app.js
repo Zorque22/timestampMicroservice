@@ -3,7 +3,7 @@ var express = require('express');
 app = express();
 
 app.use(express.static('public'));
-console.log('boe');
+
 app.get('/:time', function(req,res){
   if(req.params.time == parseInt(req.params.time)){
     var date = new Date(parseInt(req.params.time)*1000);
